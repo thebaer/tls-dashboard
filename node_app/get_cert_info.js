@@ -55,9 +55,9 @@ function get_cert_parameters(element, index, array) {
       }
     };
 
-    if (parsed.info.days_left <= 30 ){
+    if (parsed.info.days_left <= 14 ){
       parsed.info.background_class = 'danger';
-    } else if (parsed.info.days_left  > 30 && parsed.info.days_left <= 60 ) {
+    } else if (parsed.info.days_left <= 30 ) {
       parsed.info.background_class = 'warning';
     } else {
       parsed.info.background_class = 'success';
